@@ -150,7 +150,7 @@ trait Translatable {
         {
             if ($this->isKeyALocale($key))
             {
-                $translation = $this->getTranslation($key);
+                $translation = $this->getTranslation($key, false);
 
                 foreach ($values as $translationAttribute => $translationValue)
                 {
